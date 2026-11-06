@@ -1,0 +1,18 @@
+{
+  "classification": "READ_ONLY_PREVIOUS_LAB3_NOT_ROUTE_A_ACCEPTANCE",
+  "recordedAt": "2026-11-06T15:42:45.902464+08:00",
+  "rpc": "https://rpc-testnet.potos.hk",
+  "chainId": 60600,
+  "observedBlock": 2820084,
+  "token": {
+    "address": "0xB7dA837F93A5448ca0762B80862d053daf9715B3",
+    "owner": "0x5a435c43ca006be1688d0d7b95194327528eab26",
+    "decimals": 18,
+    "ownerBalanceUnits": "70000000000000000000"
+  },
+  "previousEscrow": {
+    "address": "0x249F6c83F28864e7c863306CC6DE7f936B339724",
+    "arbiter": "0x5b38da6a701c568545dcfcb03fcb875f56beddc4"
+  },
+  "routeANewEscrow": null
+}

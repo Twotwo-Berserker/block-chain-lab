@@ -1,0 +1,12 @@
+{
+  "classification": "READ_ONLY_BACKEND_ACCOUNT_CHECK_NOT_DEPLOYMENT",
+  "address": "0x4c688b060912faf95324a43C0190C59E7cE8aB3c",
+  "chainId": 60600,
+  "rpc": "https://rpc-testnet.potos.hk",
+  "checkedAt": "2026-11-06T19:07:28.113922+08:00",
+  "blockNumber": 2821289,
+  "balanceWei": "1000000000000000",
+  "balancePOT": "0.001",
+  "escrowAddress": null,
+  "privateKeyStoredInRepository": false
+}

@@ -1,0 +1,18 @@
+ROUTE A / MEMBER 1 / LOCAL VALIDATION (chain 31337)
+This is a single-process test, not three-person POTOS acceptance.
+com.wetech.demo.web3j.service.EscrowServiceIntegrationTest: tests=1 failures=0 errors=0
+com.wetech.demo.web3j.service.EscrowServiceTest: tests=6 failures=0 errors=0
+TOTAL tests=7, failures=0, errors=0, skipped=0
+Recorded: 2026-11-06T07:41:01.711239804Z
+Escrow: 0xbcf2fea151d26c6cf02ad1692d6634ce4fb397d2
+Deploy block: 3
+Final state: {"escrowTokens": "0", "buyerTokens": "70", "sellerTokens": "30", "order1": "Refunded", "order0": "Completed"}
+resolve 0 rejected: wrong status | block=21 status=0x0 gas=26216
+tx=0x06299733ec22857d1c03f13bf878ae22144e99d1a0a8b35b49006bfb90409515
+seller resolve 1 rejected: not arbiter | block=22 status=0x0 gas=23981
+tx=0x735dd7f1e401fec4c223caa2dacf45a69949b1018648a0f5fcc6b2ba009123f4
+resolve 1 refund | block=23 status=0x1 gas=52913
+tx=0x65e9ad44e7c94e539edca4671ccabfd00ebeabcca91f06650f364d9e9141e961
+confirm 0 | block=24 status=0x1 gas=64722
+tx=0x75cfa4875f1cbf0c9d8f244d2159def5c74c51ce6524e071a506f9376680fc5a
+PASS: all expected tests completed; raw receipts are preserved in build/local-evidence/

@@ -1,0 +1,68 @@
+> Task :extractSolidityImports UP-TO-DATE
+> Task :nodeSetup UP-TO-DATE
+> Task :npmSetup SKIPPED
+> Task :npmInstall UP-TO-DATE
+> Task :resolveSolidity UP-TO-DATE
+> Task :compileSolidity UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :generateContractWrappers UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
+> Task :bootJar UP-TO-DATE
+> Task :compileTestSolidity NO-SOURCE
+> Task :generateTestContractWrappers NO-SOURCE
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test
+
+EscrowServiceTest > futureDeploymentBlockIsRejected() PASSED
+
+EscrowServiceTest > eventQueryUsesInclusiveTenBlockBatchesAndDecodesEveryOrder() PASSED
+
+EscrowServiceTest > wrongChainIsRejected() PASSED
+
+EscrowServiceTest > rpcFailureIsAnErrorInsteadOfAnEmptyOrderList() PASSED
+
+EscrowServiceTest > invalidAddressAndNegativeBlockAreRejectedBeforeRpc() PASSED
+
+EscrowServiceTest > unloadedServiceExplainsWhatToDoNext() PASSED
+
+> Task :integrationTest
+
+EscrowServiceIntegrationTest > completeEscrowLifecycleAndReceiptFailuresOnLocalChain() STANDARD_OUT
+    LOCAL ONLY | chainId=31337 | all three roles simulated by one test process
+    backend=0x98d46c3c62febf47a209699831d55eb0b646bfa7
+    buyer=0x6ff22fdfea5e54df2e8fc8c0b62c996f99e363e4
+    seller=0xb44850452925deee0a440b8669f356f92219b422
+    deploy token (local only) | block=1 status=0x1 gas=630003 tx=0x1338472d82585738c77f74aa4fb548fad3638436f76dd1b4198d7989cd13d817
+    mint 100 tokens | block=2 status=0x1 gas=70607 tx=0x54e8b8b29b3dcbf0874e28c6f23771130c5b916045c7e1e43388f00e38611049
+    deploy Escrow | block=3 status=0x1 gas=1112950 tx=0xe44788e70a7c3e88999febda8a7fe16d788ccb115ca4391af6a2b4ca14f4b722
+    createOrder 0 | block=4 status=0x1 gas=184716 tx=0x5669088c845c1bcd7d917d5613ccce1c12d9b39143f60560563016a06eeefefd
+    createOrder 1 | block=16 status=0x1 gas=167640 tx=0xc0599bc0584ffef47eb1d3d4d435f83285163370242044d8db7a1bea6a5a1fb3
+    approve 60 tokens | block=17 status=0x1 gas=46163 tx=0x4de60c02ee37ec92217d1f1537f3af1c87cea27add9fac7c6fa77f4f126dd9fc
+    deposit 0 | block=18 status=0x1 gas=90188 tx=0xc5480284e0fec5f3af30983ff9fa4e4f304762503c605f370ead53844dad0e9a
+    deposit 1 | block=19 status=0x1 gas=68300 tx=0x30f8e1947094d9479753ec333fe56a99e5ed4702ae690c942816c41a9946ecab
+    seller dispute 1 | block=20 status=0x1 gas=32489 tx=0xa5d7d2ced735481ec96a3b84883103d659eb1f10d03173785ddbbcae9675278c
+    resolve 0 rejected: wrong status | block=21 status=0x0 gas=26216 tx=0x06299733ec22857d1c03f13bf878ae22144e99d1a0a8b35b49006bfb90409515
+    seller resolve 1 rejected: not arbiter | block=22 status=0x0 gas=23981 tx=0x735dd7f1e401fec4c223caa2dacf45a69949b1018648a0f5fcc6b2ba009123f4
+    resolve 1 refund | block=23 status=0x1 gas=52913 tx=0x65e9ad44e7c94e539edca4671ccabfd00ebeabcca91f06650f364d9e9141e961
+    confirm 0 | block=24 status=0x1 gas=64722 tx=0x75cfa4875f1cbf0c9d8f244d2159def5c74c51ce6524e071a506f9376680fc5a
+    SimpleStorage deploy (local only) | block=25 status=0x1 gas=101643 tx=0xa2375a7b45482294a561d213d98d3bffec60ca5888f701899a00b9b5c6ac5959
+    SimpleStorage set 100 (local only) | block=26 status=0x1 gas=44568 tx=0x989e9e49321a275a97db6a0c15dff9ea7513e8a5bff77d601181ffaf0cb8b95a
+    PASS: real local transactions, >10-block event scan, state/role failures, refunds, settlement, reload, SimpleStorage=100
+
+EscrowServiceIntegrationTest > completeEscrowLifecycleAndReceiptFailuresOnLocalChain() PASSED
+
+[Incubating] Problems report is available at: file:///home/x12w/projects/block-chain/%E5%A4%A7%E4%BD%9C%E4%B8%9A/route-a-member1/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 7s
+13 actionable tasks: 2 executed, 11 up-to-date

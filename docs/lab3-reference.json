@@ -1,0 +1,20 @@
+{
+  "classification": "实验3历史部署参考；路线A必须由后端重新部署Escrow",
+  "chainId": 60600,
+  "contracts": {
+    "Escrow": {
+      "address": "0x249F6c83F28864e7c863306CC6DE7f936B339724",
+      "deployBlock": 2670188,
+      "transactionHash": "0x2357f622e751c296d518b78617504bb132c488bd0cca9ac140715383649622f6",
+      "constructorArgs": [
+        "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
+      ]
+    },
+    "WQLToken": {
+      "address": "0xB7dA837F93A5448ca0762B80862d053daf9715B3",
+      "deployBlock": 2670016,
+      "transactionHash": "0xb21cdf055972033406a586dda5cda6e4b90a7921139943133bb5a48cc8de9ea4",
+      "constructorArgs": []
+    }
+  }
+}
